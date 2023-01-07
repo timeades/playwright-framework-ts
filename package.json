@@ -1,0 +1,21 @@
+{
+  "name": "playwright-framework-ts",
+  "version": "1.0.0",
+  "description": "Skeleton set-up of framework, reporters, run environment, target browsers",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timeades/playwright-framework-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timeades/playwright-framework-ts/issues"
+  },
+  "homepage": "https://github.com/timeades/playwright-framework-ts#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.29.2"
+  }
+}

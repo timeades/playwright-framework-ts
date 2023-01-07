@@ -1,0 +1,35 @@
+A selection of tests to consider for a typical login page and it's functionality
+
+Functional tests - UI
+1	Verify if a user will be able to login with a valid username and valid password.
+2	Verify if a user cannot login with a valid username and an invalid password.
+3	Verify the login page for both, when the field is blank and Submit button is clicked.
+4	Verify the ‘Forgot Password’ functionality.
+5	Verify the messages for invalid login.
+6	Verify the ‘Remember Me’ functionality.
+7	Verify if the data in password field is either visible as asterisk or bullet signs.
+8	Verify if a user is able to login with a new password only after he/she has changed the password.
+9	Verify if the login page allows to log in simultaneously with different credentials in a different browser.
+10	Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
+
+Functional tests - API
+
+
+
+###### Optional test cases ######
+
+Other Test Cases
+11	Verify the time taken to log in with a valid username and password.	
+12	Verify if the font, text color, and color coding of the Login page is as per the standard.	
+13	Verify if there is a ‘Cancel’ button available to erase the entered text.	
+14	Verify the login page and all its controls in different browsers.
+
+Non-functional Security Test Cases:
+1	Verify if a user cannot enter the characters more than the specified range in each field (Username and Password).
+2	Verify if a user cannot enter the characters more than the specified range in each field (Username and Password).
+3	Verify the login page by pressing ‘Back button’ of the browser. It should not allow you to enter into the system once you log out.
+4	Verify the timeout functionality of the login session.
+5	Verify if a user should not be allowed to log in with different credentials from the same browser at the same time.
+6	Verify if a user should be able to login with the same credentials in different browsers at the same time.
+7	Verify the Login page against SQL injection attack.
+8	Verify the implementation of SSL certificate.
