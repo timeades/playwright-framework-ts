@@ -73,9 +73,21 @@ const config: PlaywrightTestConfig = {
       },
     },
     {
+      name: "Mobile Chrome",
+      use: {
+        ...devices["Galaxy S III"],
+      },
+    },
+    {
       name: "Mobile Safari",
       use: {
         ...devices["iPhone 12"],
+      },
+    },
+    {
+      name: "Mobile Safari",
+      use: {
+        ...devices["iPhone 6"],
       },
     },
 
