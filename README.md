@@ -11,7 +11,7 @@ Skeleton set-up of framework, reporters, run environment, target browsers
 * Install dependencies: npm i
 
 # Running the tests
-To run the tests use the commands: 
+To run all the tests use the commands: 
 
 ```
 npx playwright test
@@ -20,6 +20,15 @@ or if you would like to see the test results in terminal rather than running the
 
 ```
 npx playwright test --reporter=list
+```
+to run single tests you can add the test name to the command e.g.
+
+```
+npx playwright test loginPage-functional.spec.ts
+
+or 
+
+npx playwright test loginPage-functional.spec.ts --reporter=list
 ```
 
 The current configuration of the run file runs the tests against desktop browsers: Chromium, Firefox & Safari. They are also run against mobile web browsers Chrome & Safari on a Pixel 5, Galaxy S III, iPhone 12 & iPhone 6. These are set in playwright.config.ts
