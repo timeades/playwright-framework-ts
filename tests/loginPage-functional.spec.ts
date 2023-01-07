@@ -1,5 +1,24 @@
 // @ts-check
-const { test, expect } = require('@playwright/test');
+//const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
+import { baseUrl } from './utils/constants/urls';
+
+test('has title', async ({ page }) => {
+  await page.goto(`${baseUrl}`);
+
+  // Expect a title "to contain" a substring.
+  await expect(page).toHaveTitle(/Playwright/);
+});
+
+test('get started link', async ({ page }) => {
+  await page.goto(`${baseUrl}`);
+
+  // Click the get started link.
+  await page.getByRole('link', { name: 'Get started' }).click();
+
+  // Expects the URL to contain intro.
+  await expect(page).toHaveURL(/.*intro/);
+});
 
 // Verify if a user will be able to login with a valid username and valid password.
 test('can login', async ({ page }) => {
