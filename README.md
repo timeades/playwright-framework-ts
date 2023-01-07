@@ -17,7 +17,7 @@ Once the tests are run you can view the results running the command:
 
 'npx playwright show-report'
 
-The current configuration for the test reporter is the default Playwright one. This could be updated depending on who needs access to results and the information required. Alternatives include [Allure](https://github.com/allure-framework/), [Monocart Example](https://cenfun.github.io/monocart-reporter/)etc.
+The current configuration for the test reporter is the default Playwright one. This could be updated depending on who needs access to results and the information required. Alternatives include [Allure](https://github.com/allure-framework/), [Monocart](https://cenfun.github.io/monocart-reporter/) etc.
 
 Current test results view:
 ![Image of the test report page](/images/testResults.png)
