@@ -25,9 +25,10 @@ to run single tests you can add the test name to the command e.g.
 
 ```
 npx playwright test loginPage-functional.spec.ts
-
+```
 or 
 
+```
 npx playwright test loginPage-functional.spec.ts --reporter=list
 ```
 
