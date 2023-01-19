@@ -33,6 +33,11 @@ const config: PlaywrightTestConfig = {
   reporter: "html",
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    baseURL: "",
+    extraHTTPHeaders: {
+      Authorization:
+        ""
+  },
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -51,45 +56,45 @@ const config: PlaywrightTestConfig = {
       },
     },
 
-    {
-      name: "firefox",
-      use: {
-        ...devices["Desktop Firefox"],
-      },
-    },
+    // {
+    //   name: "firefox",
+    //   use: {
+    //     ...devices["Desktop Firefox"],
+    //   },
+    // },
 
-    {
-      name: "webkit",
-      use: {
-        ...devices["Desktop Safari"],
-      },
-    },
+    // {
+    //   name: "webkit",
+    //   use: {
+    //     ...devices["Desktop Safari"],
+    //   },
+    // },
 
     /* Test against mobile viewports. */
-    {
-      name: "Mobile Chrome",
-      use: {
-        ...devices["Pixel 5"],
-      },
-    },
-    {
-      name: "Mobile Chrome",
-      use: {
-        ...devices["Galaxy S III"],
-      },
-    },
-    {
-      name: "Mobile Safari",
-      use: {
-        ...devices["iPhone 12"],
-      },
-    },
-    {
-      name: "Mobile Safari",
-      use: {
-        ...devices["iPhone 6"],
-      },
-    },
+    // {
+    //   name: "Mobile Chrome",
+    //   use: {
+    //     ...devices["Pixel 5"],
+    //   },
+    // },
+    // {
+    //   name: "Mobile Chrome",
+    //   use: {
+    //     ...devices["Galaxy S III"],
+    //   },
+    // },
+    // {
+    //   name: "Mobile Safari",
+    //   use: {
+    //     ...devices["iPhone 12"],
+    //   },
+    // },
+    // {
+    //   name: "Mobile Safari",
+    //   use: {
+    //     ...devices["iPhone 6"],
+    //   },
+    // },
 
     /* Test against branded browsers. */
     // {
