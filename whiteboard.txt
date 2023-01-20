@@ -1,0 +1,5 @@
+Svetlana Alekseeva14:11
+Validate https://cybertek-ui-names.herokuapp.com/api/?amount=300&minlen=16&region=portugal&ext to return body with a valid JSON format
+Validate that it returns 300 objects
+Validate that it includes at least one object whose age is older than 30 years old
+How would you set up to automate the test?

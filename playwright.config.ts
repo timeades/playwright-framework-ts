@@ -1,5 +1,10 @@
 import type { PlaywrightTestConfig } from "@playwright/test";
+import { expect } from '@playwright/test';
 import { devices } from "@playwright/test";
+import playwrightApiMatchers from 'odottaa';
+
+// extend expect with custom API matchers
+expect.extend(playwrightApiMatchers);
 
 /**
  * Read environment variables from file.
@@ -33,11 +38,11 @@ const config: PlaywrightTestConfig = {
   reporter: "html",
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: "",
-    extraHTTPHeaders: {
-      Authorization:
-        ""
-  },
+    baseURL: "https://cybertek-ui-names.herokuapp.com/api/?amount=300&minlen=16&region=portugal&ext",
+  //   extraHTTPHeaders: {
+  //     Authorization:
+  //       ""
+  // },
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
     /* Base URL to use in actions like `await page.goto('/')`. */
